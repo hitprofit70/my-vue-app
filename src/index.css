@@ -1,0 +1,42 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #ffffff;
+}
+
+.nav-home {
+  color: white;
+  text-decoration: none;
+}
+
+img {
+  height: 600px;
+}
+
+.card:hover {
+  transition: 4s;
+  transform: scale(1);
+  background-color: grey;
+}
+
+.view-button {
+  background-color: black;
+  border-radius: 10px;
+  height: 3.5rem;
+  width: 100%;
+  font-weight: bold;
+}
+
+.view-button:hover {
+  background-color: white;
+ color: black;
+}
+
+.display-products {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
