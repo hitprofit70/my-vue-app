@@ -8,11 +8,6 @@
   background-color: #ffffff;
 }
 
-.nav-home {
-  color: white;
-  text-decoration: none;
-}
-
 img {
   height: 600px;
 }
@@ -31,12 +26,12 @@ img {
   font-weight: bold;
 }
 
-.view-button:hover {
-  background-color: white;
- color: black;
-}
-
 .display-products {
   display: grid;
   grid-template-columns: auto auto auto auto;
+}
+
+.view-button:hover {
+  background-color: white;
+  color: black;
 }
