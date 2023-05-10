@@ -1,39 +1,32 @@
 const PData = [
     {   
         id: 1,
-        name: 'New Balance Lightnavy',
+        name: 'New Balance Kick Game',
         price: '1199.95',
-        pImg: 'https://images.unsplash.com/photo-1661605813204-8c7662c1a5f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGxlYXRoZXIlMjBzbmVha2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
+        pImg: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL42Icoj2dGv8bJuoDfrTtvJDQqcf4XG64IQ&usqp=CAU',
         rate: 3,
     },
     {   
         id: 2,
-        name: 'New Balance Trainer',
-        price: '9999.95',
-        pImg: '',
-        rate: 4,
+        name: 'Puma RS',
+        price: '2799.95',
+        pImg: 'https://sheshalifestyle.com/wp-content/uploads/2023/03/RS-EFEKT-AR.png',
+        rate: 5,
     },
     {   
         id: 3,
         name: 'Aiads200 ',
         price: '2199.95',
-        pImg: '',
+        pImg: 'https://cdn.shopify.com/s/files/1/0473/6965/0340/products/4c44db31d62852d6e629cb8924c6a9954e0ddf10_GZ6201_Adidas_ADI2000_Energy_Ink_Footwear_White_Gum_5_os_1_768x768.jpg?v=1660264421',
         rate: 5,
     },
     {   
         id: 4,
         name: 'Nike Air Force 1',
         price: '2499.95',
-        pImg: '',
+        pImg: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTnbBTepdfkfbA_tYYFedPeQqr_rec-JF87Un-V9JdnioMIKDhHzWVdhbkhF1s2LloPE1wZJrMa06K0yUJdcFQ3n6RfwB3z_kgCpcQ4-YC9UCkBVAmWrhhDXw&usqp=CAE',
         rate: 5,
     },
-    {   
-        id: 5,
-        name: 'Puma RS',
-        price: '2799.95',
-        pImg: '',
-        rate: 5,
-    }
 ]
 
 export default PData;
