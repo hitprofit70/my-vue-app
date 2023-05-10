@@ -18,7 +18,7 @@ const SwipeImg = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://media.istockphoto.com/id/1148923865/photo/young-women-with-shopping-bags-standing-on-the-street.jpg?s=612x612&w=0&k=20&c=QzFps4dqUvrJ9pVFalCIV0YIl4STcf1rruGMk5XJGq8="
+            src="https://images.pexels.com/photos/1737957/pexels-photo-1737957.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="First slide"
           />
           <Carousel.Caption>
@@ -28,7 +28,7 @@ const SwipeImg = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://media.istockphoto.com/id/1353378996/photo/mature-black-couple-doing-online-shopping-with-credit-card-card-at-home.jpg?s=612x612&w=0&k=20&c=KE6NnylVxAvCOOMbjvrgMg0QIKSCcj9eGYY--fMZrmo="
+            src="https://images.pexels.com/photos/8938734/pexels-photo-8938734.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="Second slide"
           />
 
