@@ -17,22 +17,22 @@ const Floor = () => {
         <Container>
           <Row>
             <Column>
-              <Heading>About Us</Heading>
-              <FooterLink href="#">Aim</FooterLink>
-              <FooterLink href="#">Vision</FooterLink>
-              <FooterLink href="#">Testimonials</FooterLink>
+              <Heading>Help</Heading>
+              <FooterLink href="#">Order Tracking</FooterLink>
+              <FooterLink href="#">Returns</FooterLink>
+              <FooterLink href="#">Store Location</FooterLink>
             </Column>
             <Column>
-              <Heading>Services</Heading>
-              <FooterLink href="#">Writing</FooterLink>
-              <FooterLink href="#">Internships</FooterLink>
-              <FooterLink href="#">Coding</FooterLink>
-              <FooterLink href="#">Teaching</FooterLink>
+              <Heading>Information</Heading>
+              <FooterLink href="#">About Us</FooterLink>
+              <FooterLink href="#">Privacy Policy</FooterLink>
+              <FooterLink href="#">Returns Policy</FooterLink>
+              <FooterLink href="#">Terms and Conditons</FooterLink>
             </Column>
             <Column>
               <Heading>Contact Us</Heading>
               <FooterLink href="#">086 311 7891</FooterLink>
-              <FooterLink href="#">myshopping@gmail.com</FooterLink>
+              <FooterLink href="#">info@shopping.co.za</FooterLink>
             </Column>
             <Column>
               <Heading>Social Media</Heading>

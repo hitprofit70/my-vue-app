@@ -1,4 +1,5 @@
 import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom";
 
 const ProductsCard = ({id,pImg, name, price}) => {
   return (
@@ -17,7 +18,9 @@ const ProductsCard = ({id,pImg, name, price}) => {
             <Card.Title>R{price}</Card.Title>
             <h2 style={{ color: "yellow" }}>***</h2>
           </Card.Body>
+          <Link to='/cart'>
           <button className="view-button mb-3">View</button>
+          </Link>
         </Card>
       </div>
     </div>

@@ -1,8 +1,15 @@
+import Floor from "../components/Floor"
+import TopNav from "../components/TopNav"
 
 
 const CartPage = () => {
   return (
-    <div>CartPage</div>
+    <div>
+      <TopNav/>
+
+      <h4>Cart</h4>
+      <Floor/>
+    </div>
   )
 }
 
