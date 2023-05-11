@@ -1,12 +1,15 @@
-import TopNav from "../components/TopNav"
-import Floor from "../components/Floor"
+import TopNav from "../components/TopNav";
+import Floor from "../components/Floor";
+import ProductsCard from "../components/ProductsCard";
 
 const PantsPage = () => {
   return (
     <div>
-       <TopNav />
-      <h5>Pants</h5>
-      <Floor/>
+      <TopNav />
+      <div className="container mt-5 mb-5">
+        <ProductsCard />
+      </div>
+      <Floor />
     </div>
   );
 };

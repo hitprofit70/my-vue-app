@@ -12,10 +12,9 @@ img {
   height: 450px;
 }
 
-.card:hover {
+.Imgsrc:hover {
   transition: 4s;
   transform: scale(1);
-  background-color: grey;
 }
 
 .view-button {
@@ -26,12 +25,13 @@ img {
   font-weight: bold;
 }
 
-.display-products {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-}
-
 .view-button:hover {
   background-color: white;
   color: black;
+}
+
+.col {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: -10px;
 }

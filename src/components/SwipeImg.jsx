@@ -9,15 +9,14 @@ const SwipeImg = () => {
   };
 
   return (
-    <>
+    <div className="container mt-5">
       <Carousel
-        className="container mt-5"
         activeIndex={index}
         onSelect={handleSelect}
       >
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-100 shadow bg-body rounded"
             src="https://images.pexels.com/photos/1737957/pexels-photo-1737957.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="First slide"
           />
@@ -48,7 +47,7 @@ const SwipeImg = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-    </>
+    </div>
   );
 };
 

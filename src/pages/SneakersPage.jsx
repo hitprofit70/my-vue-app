@@ -1,11 +1,14 @@
 import TopNav from "../components/TopNav";
 import Floor from "../components/Floor";
+import ProductsCard from "../components/ProductsCard";
 
 const SneakersPage = () => {
   return (
     <>
     <TopNav/>
-    <h3>SneakersPage</h3>
+    <div className="container mt-5 mb-5">
+    <ProductsCard/>
+    </div>
     <Floor/>
     </>
   )

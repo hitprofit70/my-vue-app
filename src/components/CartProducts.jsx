@@ -3,8 +3,8 @@ import ListGroup from "react-bootstrap/ListGroup";
 
 const CartProducts = () => {
   return (
-    <div>
-      <ListGroup className="container mt-5">
+    <div className="container mt-5 mb-5">
+      <ListGroup className="shadow bg-body rounded">
         <ListGroup.Item
           as="li"
           className="d-flex justify-content-between align-items-start"
@@ -13,10 +13,10 @@ const CartProducts = () => {
             <img
               src="https://cdn.shopify.com/s/files/1/0473/6965/0340/products/4c44db31d62852d6e629cb8924c6a9954e0ddf10_GZ6201_Adidas_ADI2000_Energy_Ink_Footwear_White_Gum_5_os_1_768x768.jpg?v=1660264421"
               alt=""
-              className=""
+              className="shadow bg-body rounded"
               style={{ width: "150px", height: "150px" }}
             />
-            <div className="fw-bold">Nike Air Force 1</div>
+            <div className="fw-bold mt-2">Nike Air Force 1</div>
             <div className="fw-bold">R1 299.95</div>
           </div>
           <button className="btn btn-dark mt-5">Remove</button>
@@ -29,10 +29,10 @@ const CartProducts = () => {
             <img
               src="https://sheshalifestyle.com/wp-content/uploads/2023/03/RS-EFEKT-AR.png"
               alt=""
-              className=""
+              className="shadow bg-body rounded"
               style={{ width: "150px", height: "150px" }}
             />
-            <div className="fw-bold">Puma RS</div>
+            <div className="fw-bold mt-2">Puma RS</div>
             <div className="fw-bold">R1 799.95</div>
           </div>
           <button className="btn btn-dark mt-5">Remove</button>
