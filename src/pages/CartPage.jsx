@@ -1,3 +1,4 @@
+import CartProducts from "../components/CartProducts"
 import Floor from "../components/Floor"
 import TopNav from "../components/TopNav"
 
@@ -6,8 +7,7 @@ const CartPage = () => {
   return (
     <div>
       <TopNav/>
-
-      <h4>Cart</h4>
+      <CartProducts/>
       <Floor/>
     </div>
   )
