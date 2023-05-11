@@ -30,6 +30,18 @@ img {
   color: black;
 }
 
+.add-button {
+  background-color: black;
+  width: 100px;
+  height: 3rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.addbutton:hover {
+  background: white;
+}
+
 .col {
   display: grid;
   grid-template-columns: auto auto auto auto;

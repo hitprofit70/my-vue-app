@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const ProductsCard = ({ id, pImg, name, price }) => {
   return (
-    <div className="container">
+    <div>
       <div className="row">
         <div className="col" style={{ margin: "10px" }}>
-          <Card className="shadow bg-body rounded" style={{ width: "18rem", height: "26rem", objectFit: "cover" }}>
+          <Card className="shadow bg-body rounded" style={{ width: "19rem", height: "26rem", objectFit: "cover" }}>
             <Card.Img
               className="Imgsrc mt-3"
               style={{
@@ -20,7 +20,9 @@ const ProductsCard = ({ id, pImg, name, price }) => {
             <Card.Body>
               <Card.Title>{name}</Card.Title>
               <Card.Text>R{price}</Card.Text>
+              <Link to={`/productview/${id}`}>
               <button className="view-button">View</button>
+              </Link>
             </Card.Body>
           </Card>
         </div>

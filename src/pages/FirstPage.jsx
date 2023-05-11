@@ -19,7 +19,7 @@ const FirstPage = () => {
         <h3 className="text-center mt-5 mb-5">Welcome To Our Shopping</h3>
         <div className="row">
           <Link to="/sneakers">
-          <div className="subheading">Sneakers</div>
+            <div className="subheading">Sneakers</div>
           </Link>
           <div className="col">
             {products.map((p, index) => (
@@ -34,11 +34,11 @@ const FirstPage = () => {
           </div>
         </div>
         <div className="row mt-5">
-        <Link to="/pants">
-          <div className="subheading">Pants</div>
+          <Link to="/pants">
+            <div className="subheading">Pants</div>
           </Link>
           <div className="col">
-          {pants.map((i, index) => (
+            {pants.map((i, index) => (
               <ProductsCard
                 key={index}
                 id={i.id}
