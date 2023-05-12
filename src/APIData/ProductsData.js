@@ -1,32 +1,48 @@
 const PData = [
-    {   
-        id: 1,
-        name: 'New Balance Kick Game',
-        price: '1199.95',
-        pImg: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL42Icoj2dGv8bJuoDfrTtvJDQqcf4XG64IQ&usqp=CAU',
-        rate: 3,
-    },
-    {   
-        id: 2,
-        name: 'Puma RS',
-        price: '2799.95',
-        pImg: 'https://sheshalifestyle.com/wp-content/uploads/2023/03/RS-EFEKT-AR.png',
-        rate: 5,
-    },
-    {   
-        id: 3,
-        name: 'Aiads200 ',
-        price: '2199.95',
-        pImg: 'https://cdn.shopify.com/s/files/1/0473/6965/0340/products/4c44db31d62852d6e629cb8924c6a9954e0ddf10_GZ6201_Adidas_ADI2000_Energy_Ink_Footwear_White_Gum_5_os_1_768x768.jpg?v=1660264421',
-        rate: 5,
-    },
-    {   
-        id: 4,
-        name: 'Nike Air Force 1',
-        price: '2499.95',
-        pImg: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTnbBTepdfkfbA_tYYFedPeQqr_rec-JF87Un-V9JdnioMIKDhHzWVdhbkhF1s2LloPE1wZJrMa06K0yUJdcFQ3n6RfwB3z_kgCpcQ4-YC9UCkBVAmWrhhDXw&usqp=CAE',
-        rate: 5,
-    },
-]
+  {
+    id: 1,
+    name: "adidas Originals Ozweego",
+    price: "1 699.95",
+    pImg: [
+      "https://thefoschini.vtexassets.com/arquivos/ids/54096472-800-800?v=638190047033430000&width=800&height=800&aspect=true",
+      "https://thefoschini.vtexassets.com/arquivos/ids/54096487-800-800?v=638190047042330000&width=800&height=800&aspect=true",
+      "https://thefoschini.vtexassets.com/arquivos/ids/54096496-800-800?v=638190047046700000&width=800&height=800&aspect=true",
+    ],
+    rate: 3,
+  },
+  {
+    id: 2,
+    name: "adidas Originals Multix",
+    price: "1 799.95",
+    pImg: [
+      "https://thefoschini.vtexassets.com/arquivos/ids/54052711-800-800?v=638190011942230000&width=800&height=800&aspect=true",
+      "https://thefoschini.vtexassets.com/arquivos/ids/54052724-800-800?v=638190011949300000&width=800&height=800&aspect=true",
+      "https://thefoschini.vtexassets.com/arquivos/ids/54052736-800-800?v=638190011956800000&width=800&height=800&aspect=true",
+    ],
+    rate: 5,
+  },
+  {
+    id: 3,
+    name: "Nike Junior Blazer",
+    price: "959.95",
+    pImg: [
+        "https://thefoschini.vtexassets.com/arquivos/ids/54335129-800-800?v=638190257688170000&width=800&height=800&aspect=true",
+        "https://thefoschini.vtexassets.com/arquivos/ids/54335142-800-800?v=638190257702900000&width=800&height=800&aspect=true",
+        "https://thefoschini.vtexassets.com/arquivos/ids/54335147-800-800?v=638190257708200000&width=800&height=800&aspect=true",
+      ],
+    rate: 5,
+  },
+  {
+    id: 4,
+    name: "Nike Junior Uptempo",
+    price: " 2 399.95",
+    pImg: [
+        "https://thefoschini.vtexassets.com/arquivos/ids/54205095-800-800?v=638190148385370000&width=800&height=800&aspect=true",
+        "https://thefoschini.vtexassets.com/arquivos/ids/54205106-800-800?v=638190148395130000&width=800&height=800&aspect=true",
+        "https://thefoschini.vtexassets.com/arquivos/ids/54205114-800-800?v=638190148405170000&width=800&height=800&aspect=true",
+      ],
+    rate: 5,
+  },
+];
 
 export default PData;

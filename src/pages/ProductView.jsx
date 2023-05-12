@@ -7,6 +7,7 @@ import Floor from "../components/Floor";
 import Stack from "react-bootstrap/Stack";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Carousel from "react-bootstrap/Carousel";
 
 const ProductView = () => {
   const { id } = useParams();
@@ -33,11 +34,36 @@ const ProductView = () => {
               <Col
                 style={{ width: "350px", height: "350px" }}
               >
-                <img className="mt-4"
+                <Carousel>
+        <Carousel.Item>
+          <img
+            style={{width: "100%", height: "300px"}}
+            src={products.pImg}
+            alt="First slide"
+          />
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            style={{width: "100%", height: "300px"}}
+            src={products.pImg}
+            alt="Second slide"
+          />
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            style={{width: "100%", height: "300px"}}
+            src={products.pImg}
+            alt="Third slide"
+          />
+        </Carousel.Item>
+      </Carousel>
+                {/* <img className="mt-4"
                   src={products.pImg}
                   alt=""
                   style={{ width: "300px", height: "300px", marginRight: "auto", marginLeft: "auto" }}
-                />
+                /> */}
               </Col>
               <Col style={{ width: "350px", height: "350px" }}>
                 <Stack className="text-center mr-5 mt-3 mb-3" gap={3}>

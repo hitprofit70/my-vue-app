@@ -12,7 +12,7 @@ const SwipeImg = () => {
     <div className="container mt-5">
       <Carousel
         activeIndex={index}
-        onSelect={handleSelect}
+        onSelect={handleSelect} className="shadow bg-body rounded"
       >
         <Carousel.Item>
           <img
@@ -26,7 +26,7 @@ const SwipeImg = () => {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-100 shadow bg-body rounded"
             src="https://images.pexels.com/photos/8938734/pexels-photo-8938734.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="Second slide"
           />
@@ -37,7 +37,7 @@ const SwipeImg = () => {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-100 shadow bg-body rounded"
             src="https://media.istockphoto.com/id/1350880582/photo/online-shopping.jpg?s=612x612&w=0&k=20&c=-oFYGMjP_s-Ly7AH-tK8C1F9VOGElRAuGgAwBKQ7pyU="
             alt="Third slide"
           />
