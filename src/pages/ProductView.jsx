@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ProductsData from "../APIData/ProductsData";
-import PantsData from "../APIData/PantsData"
+import PantsData from "../APIData/PantsData";
 import TopNav from "../components/TopNav";
 import Floor from "../components/Floor";
 import Stack from "react-bootstrap/Stack";
@@ -31,39 +31,32 @@ const ProductView = () => {
         {products && (
           <div className="row">
             <Row>
-              <Col
-                style={{ width: "350px", height: "350px" }}
-              >
+              <Col style={{ width: "350px", height: "350px" }}>
                 <Carousel>
-        <Carousel.Item>
-          <img
-            style={{width: "100%", height: "300px"}}
-            src={products.pImg}
-            alt="First slide"
-          />
-        </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      style={{ width: "100%", height: "300px" }}
+                      src={products.pImg}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
 
-        <Carousel.Item>
-          <img
-            style={{width: "100%", height: "300px"}}
-            src={products.pImg}
-            alt="Second slide"
-          />
-        </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      style={{ width: "100%", height: "300px" }}
+                      src={products.pImg}
+                      alt="Second slide"
+                    />
+                  </Carousel.Item>
 
-        <Carousel.Item>
-          <img
-            style={{width: "100%", height: "300px"}}
-            src={products.pImg}
-            alt="Third slide"
-          />
-        </Carousel.Item>
-      </Carousel>
-                {/* <img className="mt-4"
-                  src={products.pImg}
-                  alt=""
-                  style={{ width: "300px", height: "300px", marginRight: "auto", marginLeft: "auto" }}
-                /> */}
+                  <Carousel.Item>
+                    <img
+                      style={{ width: "100%", height: "300px" }}
+                      src={products.pImg}
+                      alt="Third slide"
+                    />
+                  </Carousel.Item>
+                </Carousel>
               </Col>
               <Col style={{ width: "350px", height: "350px" }}>
                 <Stack className="text-center mr-5 mt-3 mb-3" gap={3}>
@@ -87,14 +80,32 @@ const ProductView = () => {
         {pants && (
           <div className="row">
             <Row>
-              <Col
-                style={{ width: "350px", height: "350px" }}
-              >
-                <img className="mt-4"
-                  src={pants.pImg}
-                  alt=""
-                  style={{ width: "300px", height: "300px", marginRight: "auto", marginLeft: "auto" }}
-                />
+              <Col style={{ width: "350px", height: "350px" }}>
+              <Carousel>
+                  <Carousel.Item>
+                    <img
+                      style={{ width: "100%", height: "300px" }}
+                      src={pants.pImg}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+
+                  <Carousel.Item>
+                    <img
+                      style={{ width: "100%", height: "300px" }}
+                      src={pants.pImg}
+                      alt="Second slide"
+                    />
+                  </Carousel.Item>
+
+                  <Carousel.Item>
+                    <img
+                      style={{ width: "100%", height: "300px" }}
+                      src={pants.pImg}
+                      alt="Third slide"
+                    />
+                  </Carousel.Item>
+                </Carousel>
               </Col>
               <Col style={{ width: "350px", height: "350px" }}>
                 <Stack className="text-center mr-5 mt-3 mb-3" gap={3}>
@@ -105,7 +116,7 @@ const ProductView = () => {
                     {" "}
                     <button
                       className="add-button mt-3"
-                      onClick={() => addtoCart(products)}
+                      onClick={() => addtoCart(pants)}
                     >
                       AddtoCart
                     </button>
