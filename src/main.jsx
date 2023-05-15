@@ -9,6 +9,7 @@ import ProductView from "./pages/ProductView";
 import CartPage from "./pages/CartPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CheckoutPage from "./pages/CheckoutPage";
+import AppState from "./context/AppState";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AppState>
+      <RouterProvider router={router} />
+    </AppState>
   </React.StrictMode>
 );

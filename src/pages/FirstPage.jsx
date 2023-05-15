@@ -2,14 +2,14 @@ import TopNav from "../components/TopNav";
 import Floor from "../components/Floor";
 import SwipeImg from "../components/SwipeImg";
 import ProductsCard from "../components/ProductsCard";
-import ProductsData from "../APIData/ProductsData";
-import PantsData from "../APIData/PantsData";
-import { useState } from "react";
+import { useContext} from "react";
 import { Link } from "react-router-dom";
+import AppContext from "../context/AppContext";
 
 const FirstPage = () => {
-  const [products, setProducts] = useState(ProductsData);
-  const [pants, setPants] = useState(PantsData);
+ const {products} = useContext(AppContext);
+ const {pants} = useContext(AppContext);
+
 
   return (
     <>

@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import ProductsData from "../APIData/ProductsData";
 import PantsData from "../APIData/PantsData";
 import SneakersData from '../APIData/SneakersData';
@@ -10,6 +10,7 @@ import Stack from "react-bootstrap/Stack";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
+import AppContext from "../context/AppContext";
 
 const ProductView = () => {
   const { id } = useParams();
@@ -17,6 +18,7 @@ const ProductView = () => {
   const [products, setProducts] = useState(null);
   const [sneakers, setSneakers] = useState(null);
   const [secondPants, setSecondPants] = useState(null);
+  const {addToCart} = useContext(AppContext)
 
   //This function helps to display data to UI//
   useEffect(() => {
@@ -86,7 +88,7 @@ const ProductView = () => {
                     {" "}
                     <button
                       className="add-button mt-3"
-                      onClick={() => addtoCart(products)}
+                      onClick={() => addToCart(products)}
                     >
                       AddtoCart
                     </button>
@@ -135,7 +137,7 @@ const ProductView = () => {
                     {" "}
                     <button
                       className="add-button mt-3"
-                      onClick={() => addtoCart(pants)}
+                      onClick={() => addToCart(pants)}
                     >
                       AddtoCart
                     </button>
@@ -184,7 +186,7 @@ const ProductView = () => {
                     {" "}
                     <button
                       className="add-button mt-3"
-                      onClick={() => addtoCart(pants)}
+                      onClick={() => addToCart(pants)}
                     >
                       AddtoCart
                     </button>
@@ -233,7 +235,7 @@ const ProductView = () => {
                     {" "}
                     <button
                       className="add-button mt-3"
-                      onClick={() => addtoCart(pants)}
+                      onClick={() => addToCart(pants)}
                     >
                       AddtoCart
                     </button>
