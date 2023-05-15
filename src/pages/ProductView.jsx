@@ -10,9 +10,15 @@ import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
 
 const ProductView = () => {
+  const [index, setIndex] = useState(0);
   const { id } = useParams();
   const [products, setProducts] = useState(null);
   const [pants, setPants] = useState(null);
+
+  const handleSelect = (selectedIndex) => {
+    setIndex(selectedIndex);
+  };
+
   useEffect(() => {
     setProducts(() => {
       return ProductsData.find((p) => p.id === Number(id));
@@ -32,7 +38,7 @@ const ProductView = () => {
           <div className="row">
             <Row>
               <Col style={{ width: "350px", height: "350px" }}>
-                <Carousel>
+                <Carousel activeIndex={index} onSelect={handleSelect}>
                   <Carousel.Item>
                     <img
                       style={{ width: "100%", height: "300px" }}
@@ -81,7 +87,7 @@ const ProductView = () => {
           <div className="row">
             <Row>
               <Col style={{ width: "350px", height: "350px" }}>
-              <Carousel>
+                <Carousel>
                   <Carousel.Item>
                     <img
                       style={{ width: "100%", height: "300px" }}
