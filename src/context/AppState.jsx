@@ -4,6 +4,7 @@ import ProductsData from "../APIData/ProductsData";
 import PData from "../APIData/PData";
 import PantsData from "../APIData/PantsData";
 import SneakersData from "../APIData/SneakersData";
+import toast from 'react-hot-toast';
 // import { useNavigate } from "react-router-dom";
 
 const AppState = ({ children }) => {
@@ -16,7 +17,7 @@ const AppState = ({ children }) => {
 
   const addToCart = (products) => {
     setCart([...cart, products]);
-    // navigate("/cart");
+    toast.success('Your item added already');
 
      console.log(cart)
   };

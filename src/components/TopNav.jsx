@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 import AppContext from "../context/AppContext";
 
 const TopNav = () => {
-  const {cart} = useContext(AppContext);
-  
+  const { cart } = useContext(AppContext);
+
   return (
     <>
       <Navbar bg="dark" variant="dark">
@@ -23,7 +23,7 @@ const TopNav = () => {
             <Nav.Link>
               <Link to="/pants">Pants</Link>
             </Nav.Link>
-            <Nav.Link className="cart" style={{marginLeft: "700px"}}>
+            <Nav.Link className="cart" style={{ marginLeft: "700px" }}>
               <Link to="/cart">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -37,6 +37,16 @@ const TopNav = () => {
                 </svg>
                 <span className="count">{cart.length}</span>
               </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <select
+                className="form-select form-select-sm bg-dark text-light"
+                aria-label=".form-select-sm example"
+              >
+                <option selected className="bg-dark">My Account</option>
+                <option value="1">Register</option>
+                <option value="2">Login</option>
+              </select>
             </Nav.Link>
           </Nav>
         </Container>

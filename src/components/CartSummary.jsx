@@ -1,14 +1,18 @@
 import Stack from "react-bootstrap/Stack";
 import Col from "react-bootstrap/Col";
+import { useContext } from "react";
+import AppContext from "../context/AppContext";
 
 const CartSummary = () => {
+
+  const {cart} = useContext(AppContext)
   return (
     <div className="container mt-5">
       <Col
         className="mb-4 shadow bg-body rounded"
         style={{
           width: "350px",
-          height: "230px",
+          height: "250px",
           marginLeft: "auto",
         }}
       >
@@ -22,8 +26,7 @@ const CartSummary = () => {
           <h6
             className="border"
             style={{ width: "250px", marginLeft: "auto", marginRight: "auto" }}
-          >
-            R23456.09
+          > Total: R23456.09 <br></br>({cart.length} items)
           </h6>
           <span
             className="border"

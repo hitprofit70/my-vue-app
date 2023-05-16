@@ -10,6 +10,7 @@ import CartPage from "./pages/CartPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CheckoutPage from "./pages/CheckoutPage";
 import AppState from "./context/AppState";
+import { Toaster } from 'react-hot-toast';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <AppState>
       <RouterProvider router={router} />
+      <Toaster/>
     </AppState>
   </React.StrictMode>
 );
