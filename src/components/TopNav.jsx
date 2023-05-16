@@ -23,7 +23,7 @@ const TopNav = () => {
             <Nav.Link>
               <Link to="/pants">Pants</Link>
             </Nav.Link>
-            <Nav.Link className="cart">
+            <Nav.Link className="cart" style={{marginLeft: "700px"}}>
               <Link to="/cart">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
