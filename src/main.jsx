@@ -11,6 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import CheckoutPage from "./pages/CheckoutPage";
 import AppState from "./context/AppState";
 import { Toaster } from 'react-hot-toast';
+import DeliveryPage from "./pages/DeliveryPage";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
   {
     path: "/checkout",
     element: <CheckoutPage />,
+  },
+  {
+    path: "/delivery",
+    element: <DeliveryPage />,
   },
 ]);
 

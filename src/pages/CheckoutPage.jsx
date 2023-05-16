@@ -1,8 +1,11 @@
+import DeliveryPage from "./DeliveryPage"
 
 
 const CheckoutPage = () => {
   return (
-    <div>CheckoutPage</div>
+    <div>
+      <DeliveryPage/>
+    </div>
   )
 }
 

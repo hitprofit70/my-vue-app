@@ -2,10 +2,10 @@ import Stack from "react-bootstrap/Stack";
 import Col from "react-bootstrap/Col";
 import { useContext } from "react";
 import AppContext from "../context/AppContext";
+import { Link } from "react-router-dom";
 
 const CartSummary = () => {
-
-  const {cart} = useContext(AppContext)
+  const { cart } = useContext(AppContext);
   return (
     <div className="container mt-5">
       <Col
@@ -26,7 +26,9 @@ const CartSummary = () => {
           <h6
             className="border"
             style={{ width: "250px", marginLeft: "auto", marginRight: "auto" }}
-          > Total: R23456.09 <br></br>({cart.length} items)
+          >
+            {" "}
+            Total: R23456.09 <br></br>({cart.length} items)
           </h6>
           <span
             className="border"
@@ -35,10 +37,11 @@ const CartSummary = () => {
             Free Delivery
           </span>
           <div className="">
-            {" "}
-            <button className="checkout-button mt-3">
-              Proceed to Checkout
-            </button>
+            <Link to="/checkout">
+              <button className="checkout-button mt-3">
+                Proceed to Checkout
+              </button>
+            </Link>
           </div>
         </Stack>
       </Col>
@@ -65,7 +68,6 @@ const CartSummary = () => {
             >
               <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />
             </svg>
-
             Secure checkout
           </span>
           <span
