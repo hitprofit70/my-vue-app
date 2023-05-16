@@ -38,8 +38,22 @@ img {
   font-weight: bold;
 }
 
-.addbutton:hover {
+.add-button:hover {
   background: white;
+  color: black;
+}
+
+.checkout-button {
+  background-color: black;
+  width: 200px;
+  height: 2.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.checkout-button:hover {
+  background: white;
+  color: black;
 }
 
 .col {
@@ -47,3 +61,7 @@ img {
   grid-template-columns: auto auto auto auto;
   margin: -10px;
 }
+
+/* .cart-summary {
+  float: right;
+} */

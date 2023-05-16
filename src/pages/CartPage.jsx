@@ -3,6 +3,7 @@ import CartProducts from "../components/CartProducts"
 import Floor from "../components/Floor"
 import TopNav from "../components/TopNav"
 import AppContext from "../context/AppContext"
+import CartSummary from "../components/CartSummary"
 
 
 const CartPage = () => {
@@ -11,6 +12,7 @@ const CartPage = () => {
     <div>
       <TopNav/>
       <div className="container">
+        <CartSummary/>
         {cart.map((p,index) => (
           <CartProducts 
           key={index}

@@ -2,7 +2,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 
 const CartProducts = ({pImg, name, price}) => {
   return (
-    <div className="container mt-5 mb-5">
+    <div className="container mb-5">
       <ListGroup className="shadow bg-body rounded">
         <ListGroup.Item
           as="li"
@@ -16,7 +16,7 @@ const CartProducts = ({pImg, name, price}) => {
               style={{ width: "150px", height: "150px" }}
             />
             <div className="fw-bold mt-2">{name}</div>
-            <div className="fw-bold">{price}</div>
+            <div className="fw-bold">R{price}</div>
           </div>
           <button className="btn btn-dark mt-5">Remove</button>
         </ListGroup.Item>

@@ -49,11 +49,11 @@ const ProductView = () => {
     <div>
       <TopNav />
       <div className="container mt-5 mb-5">
-        {/* {products && (
+        {products && (
           <div className="row">
             <Row>
               <Col style={{ width: "350px", height: "350px" }}>
-                <Carousel activeIndex={index} onSelect={handleSelect}>
+                <Carousel>
                   <Carousel.Item>
                     <img
                       style={{ width: "100%", height: "300px" }}
@@ -97,7 +97,7 @@ const ProductView = () => {
               </Col>
             </Row>
           </div>
-        )} */}
+        )}
         {pants && (
           <div className="row">
             <Row>
@@ -196,7 +196,7 @@ const ProductView = () => {
             </Row>
           </div>
         )}
-        {secondPants && (
+        {/* {secondPants && (
           <div className="row">
             <Row>
               <Col style={{ width: "350px", height: "350px" }}>
@@ -244,7 +244,7 @@ const ProductView = () => {
               </Col>
             </Row>
           </div>
-        )}
+        )} */}
       </div>
       <Floor />
     </div>
