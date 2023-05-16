@@ -56,6 +56,32 @@ img {
   color: black;
 }
 
+.shopping-button {
+  background-color: black;
+  width: 200px;
+  height: 2.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.shopping-button:hover {
+  background: white;
+  color: black;
+}
+
+.remove-button {
+  background-color: black;
+  width: 150px;
+  height: 2.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.remove-button:hover {
+  background: white;
+  color: black;
+}
+
 .col {
   display: grid;
   grid-template-columns: auto auto auto auto;

@@ -18,7 +18,7 @@ const CartProducts = ({pImg, name, price}) => {
             <div className="fw-bold mt-2">{name}</div>
             <div className="fw-bold">R{price}</div>
           </div>
-          <button className="btn btn-dark mt-5">Remove</button>
+          <button className="remove-button mt-5">Remove</button>
         </ListGroup.Item>
       </ListGroup>
     </div>
