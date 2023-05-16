@@ -4,6 +4,7 @@ import Floor from "../components/Floor"
 import TopNav from "../components/TopNav"
 import AppContext from "../context/AppContext"
 import CartSummary from "../components/CartSummary"
+import ShoppingCard from "../components/ShoppingCard"
 
 
 const CartPage = () => {
@@ -12,6 +13,7 @@ const CartPage = () => {
     <div>
       <TopNav/>
       <div className="container">
+        <ShoppingCard/>
         <CartSummary/>
         {cart.map((p,index) => (
           <CartProducts 
