@@ -18,6 +18,7 @@ const AppState = ({ children }) => {
     setCart([...cart, products]);
     // navigate("/cart");
 
+     console.log(cart)
   };
 
   return (

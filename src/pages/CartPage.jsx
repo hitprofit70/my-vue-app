@@ -14,9 +14,9 @@ const CartPage = () => {
         {cart.map((p,index) => (
           <CartProducts 
           key={index}
-          // pImg={p.pImg}
-          // name={p.name}
-          // price={p.price}
+          pImg={p.pImg}
+          name={p.name}
+          price={p.price}
           />
         ))}
       </div>

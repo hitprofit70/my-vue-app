@@ -1,19 +1,9 @@
-import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 
 const SwipeImg = () => {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
-  };
-
   return (
     <div className="container mt-5">
-      <Carousel
-        activeIndex={index}
-        onSelect={handleSelect} className="shadow bg-body rounded"
-      >
+      <Carousel fade>
         <Carousel.Item>
           <img
             className="d-block w-100 shadow bg-body rounded"

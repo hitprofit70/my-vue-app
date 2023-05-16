@@ -186,7 +186,7 @@ const ProductView = () => {
                     {" "}
                     <button
                       className="add-button mt-3"
-                      onClick={() => addToCart(pants)}
+                      onClick={() => addToCart(sneakers)}
                     >
                       AddtoCart
                     </button>
@@ -235,7 +235,7 @@ const ProductView = () => {
                     {" "}
                     <button
                       className="add-button mt-3"
-                      onClick={() => addToCart(pants)}
+                      onClick={() => addToCart(secondPants)}
                     >
                       AddtoCart
                     </button>
