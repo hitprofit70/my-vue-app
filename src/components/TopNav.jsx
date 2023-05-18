@@ -44,8 +44,8 @@ const TopNav = () => {
                 aria-label=".form-select-sm example"
               >
                 <option selected className="bg-dark">My Account</option>
-                <option value="1">Register</option>
-                <option value="2">Login</option>
+                <Link to="/" value="1">Register</Link>
+                <Link to="/" value="2">Login</Link>
               </select>
             </Nav.Link>
           </Nav>
