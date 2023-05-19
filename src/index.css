@@ -88,6 +88,8 @@ img {
   margin: -10px;
 }
 
-/* .cart-summary {
-  float: right;
-} */
+.delivery-form input {
+  width: 400px;
+  height: 3rem;
+  margin: 5px;
+}

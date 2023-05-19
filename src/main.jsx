@@ -12,6 +12,8 @@ import CheckoutPage from "./pages/CheckoutPage";
 import AppState from "./context/AppState";
 import { Toaster } from 'react-hot-toast';
 import DeliveryPage from "./pages/DeliveryPage";
+import Login from "./pages/Login";
+import Register from "./pages/Register"
 
 const router = createBrowserRouter([
   {
@@ -41,6 +43,14 @@ const router = createBrowserRouter([
   {
     path: "/delivery",
     element: <DeliveryPage />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/register",
+    element: <Register />,
   },
 ]);
 

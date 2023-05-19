@@ -1,12 +1,9 @@
-import DeliveryPage from "./DeliveryPage"
 
 
 const CheckoutPage = () => {
-  return (
-    <div>
-      <DeliveryPage/>
-    </div>
-  )
-}
+  return <div>
 
-export default CheckoutPage
+  </div>;
+};
+
+export default CheckoutPage;

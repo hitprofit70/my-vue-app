@@ -1,9 +1,8 @@
 import React from "react";
 
-const DeliveryPage = () => {
+const PaymentForm = () => {
   return (
-    <div className="container mt-5">
-      <h4 className="text-center">Personal Information</h4>
+    <div className="container">
       <form
         className="delivery-form shadow bg-body rounded"
         style={{ width: "900px", marginLeft: "auto", marginRight: "auto" }}
@@ -28,9 +27,10 @@ const DeliveryPage = () => {
         />
         <input type="text" className="bg-light" placeholder="City" />
         <input type="number" className="bg-light" placeholder="Postal Code" />
+        <button>Confirm</button>
       </form>
     </div>
   );
 };
 
-export default DeliveryPage;
+export default PaymentForm;

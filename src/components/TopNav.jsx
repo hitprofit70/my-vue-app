@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import AppContext from "../context/AppContext";
@@ -38,16 +39,14 @@ const TopNav = () => {
                 <span className="count">{cart.length}</span>
               </Link>
             </Nav.Link>
-            <Nav.Link>
-              <select
-                className="form-select form-select-sm bg-dark text-light"
-                aria-label=".form-select-sm example"
-              >
-                <option selected className="bg-dark">My Account</option>
-                <Link to="/" value="1">Register</Link>
-                <Link to="/" value="2">Login</Link>
-              </select>
-            </Nav.Link>
+            <NavDropdown title="My Account" id="basic-nav-dropdown">
+              <Link to="/login">
+              <NavDropdown.Item href="#action/3.1">Login</NavDropdown.Item>
+              </Link>
+              <Link to="/register">
+              <NavDropdown.Item href="#action/3.2">Register</NavDropdown.Item>
+              </Link>
+            </NavDropdown>
           </Nav>
         </Container>
       </Navbar>

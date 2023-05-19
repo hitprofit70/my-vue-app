@@ -1,8 +1,8 @@
 import React from "react";
 
-const DeliveryPage = () => {
+const DeliveryForm = () => {
   return (
-    <div className="container mt-5">
+    <div className="container">
       <h4 className="text-center">Personal Information</h4>
       <form
         className="delivery-form shadow bg-body rounded"
@@ -33,4 +33,4 @@ const DeliveryPage = () => {
   );
 };
 
-export default DeliveryPage;
+export default DeliveryForm;
