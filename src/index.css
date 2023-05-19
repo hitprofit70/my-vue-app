@@ -82,6 +82,20 @@ img {
   color: black;
 }
 
+.payment-button {
+  background-color: black;
+  width: 200px;
+  height: 2.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.payment-button:hover {
+  background: white;
+  color: black;
+}
+
+
 .col {
   display: grid;
   grid-template-columns: auto auto auto auto;

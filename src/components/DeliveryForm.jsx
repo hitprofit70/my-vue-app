@@ -2,7 +2,7 @@ import React from "react";
 
 const DeliveryForm = () => {
   return (
-    <div className="container">
+    <div className="container mt-5 mb-5">
       <h4 className="text-center">Personal Information</h4>
       <form
         className="delivery-form shadow bg-body rounded"
