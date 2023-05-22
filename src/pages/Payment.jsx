@@ -1,14 +1,40 @@
-import { Link } from "react-router-dom";
 import TopNav from "../components/TopNav";
 import Floor from "../components/Floor";
 import Stack from "react-bootstrap/Stack";
 import Col from "react-bootstrap/Col";
 import { useContext, useEffect, useState } from "react";
 import AppContext from "../context/AppContext";
+import toast from 'react-hot-toast';
+import { useNavigate } from "react-router-dom";
 
 const Payment = () => {
   const { cart } = useContext(AppContext);
   const [totalPrice, setTotalPrice] = useState(0);
+  const [nameCard, setNameCard] = useState("");
+  const [cardNo, setCardNo] = useState([]);
+  const [cvv, setCvv] = useState([]);
+  const [expireDate, setExpireDate] = useState([]);
+  const navigate = useNavigate();
+
+  const sendPayment = () => {
+    if (!nameCard || !cardNo || !cvv || !expireDate) {
+      toast.error("All the input are required.");
+      return;
+    } 
+
+     if (nameCard && cardNo && cvv && expireDate) {
+      localStorage.setItem('namecard', JSON.stringify(nameCard));
+      localStorage.setItem('cardno', JSON.stringify(cardNo))
+      localStorage.setItem('cvv', JSON.stringify(cvv))
+      localStorage.setItem('expiredate', JSON.stringify(expireDate))
+      toast.success("Payment successfully.");
+      navigate("/")
+      return;
+     }
+
+
+  }
+
 
   const calculateTotal = () => {
     let total = 0;
@@ -28,7 +54,7 @@ const Payment = () => {
       <TopNav />
       <div className="container mt-5 mb-5">
         <div className="why">
-          <form
+          <div
             className="delivery-form shadow bg-body rounded"
             style={{
               width: "900px",
@@ -43,28 +69,30 @@ const Payment = () => {
               style={{ width: "400px", marginLeft: "20px" }}
               className="shadow bg-body rounded mt-5"
               placeholder="Name on Card"
+              value={nameCard} onChange={(e) => setNameCard(e.target.value)}
             />
             <input
               type="number"
               style={{ width: "400px", marginLeft: "20px" }}
               className="shadow bg-body rounded"
               placeholder="Card Number"
+              value={cardNo} onChange={(e) => setCardNo(e.target.value)}
             />
             <input
               type="number"
               style={{ width: "400px", marginLeft: "20px" }}
               className="shadow bg-body rounded"
               placeholder="Security Code"
+              value={cvv} onChange={(e) => setCvv(e.target.value)}
             />
             <input
               type="date"
               style={{ width: "400px", marginLeft: "20px" }}
               className="shadow bg-body rounded"
+              value={expireDate} onChange={(e) => setExpireDate(e.target.value)}
             />
-            <Link to="/payment">
-              <button className="payment-button mt-3">Complete Purchase</button>
-            </Link>
-          </form>
+              <button className="payment-button mt-3" onClick={sendPayment}>Complete Purchase</button>
+          </div>
           <Col
             className="shadow bg-body rounded"
             style={{

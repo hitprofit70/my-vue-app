@@ -2,11 +2,21 @@ import Stack from "react-bootstrap/Stack";
 import Col from "react-bootstrap/Col";
 import { useContext, useState, useEffect } from "react";
 import AppContext from "../context/AppContext";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+// import { toast } from "react-hot-toast";
 
 const CartSummary = () => {
   const { cart } = useContext(AppContext);
   const [totalPrice, setTotalPrice] = useState(0);
+  const navigator = useNavigate();
+
+  const checkout = () => {
+    // if (!login) {
+    //   toast.error("Please Login first")
+    // }
+    navigator("/checkout");
+    return;
+  } 
 
 const calculateTotal = () => {
   let total = 0;
@@ -51,11 +61,9 @@ useEffect(() => {
             Free Delivery
           </span>
           <div className="">
-            <Link to="/checkout">
-              <button className="checkout-button mt-3">
+              <button className="checkout-button mt-3" onClick={checkout}>
                 Proceed to Checkout
               </button>
-            </Link>
           </div>
         </Stack>
       </Col>
