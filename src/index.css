@@ -51,6 +51,13 @@ img {
   font-weight: bold;
 }
 
+.secure-checkout-button {
+  width: 200px;
+  height: 2.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
 .checkout-button:hover {
   background: white;
   color: black;

@@ -13,6 +13,7 @@ import AppState from "./context/AppState";
 import { Toaster } from 'react-hot-toast';
 import Login from "./pages/Login";
 import Register from "./pages/Register"
+import Payment from "./pages/Payment";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
   {
     path: "/register",
     element: <Register />,
+  },
+  {
+    path: "/payment",
+    element: <Payment/>,
   },
 ]);
 
