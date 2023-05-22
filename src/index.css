@@ -111,3 +111,8 @@ img {
   border: none;
   color: black;
 }
+
+.why {
+  display: grid;
+  grid-template-columns: auto auto;
+}

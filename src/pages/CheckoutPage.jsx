@@ -1,14 +1,18 @@
 import Floor from "../components/Floor";
-import PaymentForm from "../components/PaymentForm";
 import TopNav from "../components/TopNav";
 import DeliveryForm from "../components/DeliveryForm";
+import CartSummary from "../components/CartSummary";
 
 const CheckoutPage = () => {
   return (
     <div>
       <TopNav />
-      <DeliveryForm />
-      <PaymentForm />
+      <div className="container">
+        <div className="why">
+          <DeliveryForm />
+          <CartSummary />
+        </div>
+      </div>
       <Floor />
     </div>
   );
