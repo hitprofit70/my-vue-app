@@ -1,11 +1,26 @@
 import Stack from "react-bootstrap/Stack";
 import Col from "react-bootstrap/Col";
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import AppContext from "../context/AppContext";
 import { Link } from "react-router-dom";
 
 const CartSummary = () => {
   const { cart } = useContext(AppContext);
+  const [totalPrice, setTotalPrice] = useState(0);
+
+const calculateTotal = () => {
+  let total = 0;
+  for (let index = 0; index < cart.length; index++) {
+   total += cart[index].price;
+
+   setTotalPrice(total);
+  }
+}
+
+useEffect(() => {
+  calculateTotal();
+}, [cart]);
+
   return (
     <div className="container mt-5">
       <Col
@@ -27,8 +42,7 @@ const CartSummary = () => {
             className="border"
             style={{ width: "250px", marginLeft: "auto", marginRight: "auto" }}
           >
-            {" "}
-            Total: R23456.09 <br></br>({cart.length} items)
+            Total: R{totalPrice}<br></br>({cart.length} items)
           </h6>
           <span
             className="border"

@@ -2,7 +2,7 @@ const PData = [
   {
     id: 1,
     name: "adidas Originals Ozweego",
-    price: "1 699.95",
+    price: 1699.95,
     pImg: [
       "https://thefoschini.vtexassets.com/arquivos/ids/54096472-800-800?v=638190047033430000&width=800&height=800&aspect=true",
       "https://thefoschini.vtexassets.com/arquivos/ids/54096487-800-800?v=638190047042330000&width=800&height=800&aspect=true",
@@ -13,7 +13,7 @@ const PData = [
   {
     id: 2,
     name: "adidas Originals Multix",
-    price: "1 799.95",
+    price: 1799.95,
     pImg: [
       "https://thefoschini.vtexassets.com/arquivos/ids/54052711-800-800?v=638190011942230000&width=800&height=800&aspect=true",
       "https://thefoschini.vtexassets.com/arquivos/ids/54052724-800-800?v=638190011949300000&width=800&height=800&aspect=true",
@@ -24,7 +24,7 @@ const PData = [
   {
     id: 3,
     name: "Nike Junior Blazer",
-    price: "959.95",
+    price: 959.95,
     pImg: [
         "https://thefoschini.vtexassets.com/arquivos/ids/54335129-800-800?v=638190257688170000&width=800&height=800&aspect=true",
         "https://thefoschini.vtexassets.com/arquivos/ids/54335142-800-800?v=638190257702900000&width=800&height=800&aspect=true",
@@ -35,7 +35,7 @@ const PData = [
   {
     id: 4,
     name: "Nike Junior Uptempo",
-    price: " 2 399.95",
+    price: 2399.95,
     pImg: [
         "https://thefoschini.vtexassets.com/arquivos/ids/54205095-800-800?v=638190148385370000&width=800&height=800&aspect=true",
         "https://thefoschini.vtexassets.com/arquivos/ids/54205106-800-800?v=638190148395130000&width=800&height=800&aspect=true",
