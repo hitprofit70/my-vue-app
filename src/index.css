@@ -88,6 +88,8 @@ img {
   height: 2.5rem;
   border-radius: 10px;
   font-weight: bold;
+  margin-left: auto;
+  margin-left: 20px;
 }
 
 .payment-button:hover {
@@ -103,7 +105,9 @@ img {
 }
 
 .delivery-form input {
-  width: 400px;
   height: 3rem;
   margin: 5px;
+  border-radius: 5px;
+  border: none;
+  color: black;
 }

@@ -8,21 +8,22 @@ const PaymentForm = () => {
       </h4>
       <form
         className="delivery-form shadow bg-body rounded"
-        style={{ width: "900px", height: "200px", marginLeft: "auto", marginRight: "auto" }}
+        style={{ width: "900px", height: "250px", marginLeft: "auto", marginRight: "auto" }}
       >
         <input
           type="text"
-          className="bg-light outline"
-          placeholder="First Name"
+          style={{ width: "400px", marginLeft: "20px"}}
+          className="shadow bg-body rounded mt-5"
+          placeholder="Name on Card"
         />
-        <input type="text" className="bg-light" placeholder="Card Number" />
-        <input type="text" className="bg-light" placeholder="Security Code" />
+        <input type="number" style={{ width: "400px", marginLeft: "20px"}} className="shadow bg-body rounded" placeholder="Card Number" />
+        <input type="number" style={{ width: "400px", marginLeft: "20px"}} className="shadow bg-body rounded" placeholder="Security Code" />
         <input
           type="date"
-          className="bg-light"
-          placeholder="Expiration Date"
+          style={{ width: "400px", marginLeft: "20px"}}
+          className="shadow bg-body rounded"
         />
-        <button className="payment-button">Complete Purchase</button>
+        <button className="payment-button mt-3">Complete Purchase</button>
       </form>
     </div>
   );

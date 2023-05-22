@@ -6,28 +6,30 @@ const DeliveryForm = () => {
       <h4 className="text-center">Personal Information</h4>
       <form
         className="delivery-form shadow bg-body rounded"
-        style={{ width: "900px", marginLeft: "auto", marginRight: "auto" }}
+        style={{ width: "900px", height: "300px", marginLeft: "auto", marginRight: "auto" }}
       >
         <input
           type="text"
-          className="bg-light outline"
+          style={{ width: "400px", marginLeft: "40px"}}
+          className="bg-light shadow bg-body rounded mt-5"
           placeholder="First Name"
         />
-        <input type="text" className="bg-light" placeholder="Last Name" />
+        <input type="text" style={{ width: "400px"}} className="shadow bg-body rounded" placeholder="Last Name" />
         <input
           type="number"
-          className="bg-light"
-          style={{ width: "810px" }}
+          className="shadow bg-body rounded"
+          style={{ width: "810px", marginLeft: "40px"}}
           placeholder="Contact Mobile"
         />
-        <input type="text" className="bg-light" placeholder="Street" />
+        <input type="text" style={{ width: "400px", marginLeft: "40px"}} className="shadow bg-body rounded" placeholder="Street" />
         <input
           type="dropdown"
-          className="bg-light"
+          style={{ width: "400px"}}
+          className="shadow bg-body rounded"
           placeholder="Country/State"
         />
-        <input type="text" className="bg-light" placeholder="City" />
-        <input type="number" className="bg-light" placeholder="Postal Code" />
+        <input type="text" style={{ width: "400px", marginLeft: "40px"}} className="shadow bg-body rounded" placeholder="City" />
+        <input type="number" style={{ width: "400px"}} className="shadow bg-body rounded" placeholder="Postal Code" />
       </form>
     </div>
   );

@@ -42,7 +42,7 @@ useEffect(() => {
             className="border"
             style={{ width: "250px", marginLeft: "auto", marginRight: "auto" }}
           >
-            Total: R{totalPrice}<br></br>({cart.length} items)
+            Total: R{new Intl.NumberFormat().format(totalPrice)}<br></br>({cart.length} items)
           </h6>
           <span
             className="border"
