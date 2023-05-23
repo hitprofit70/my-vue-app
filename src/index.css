@@ -152,6 +152,11 @@ img {
   color: black;
 }
 
-.login-text col {
-  margin-left: 1800px;
+.register-form input{
+  background-color: rgba(220, 220, 220, 0.543);
+  color: black;
+  width: 350px;
+  height: 2.5rem;
+  border-radius: 5px;
+  margin: 10px;
 }

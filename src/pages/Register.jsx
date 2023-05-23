@@ -23,7 +23,7 @@ const Register = () => {
       <TopNav />
       <div className="container mt-5 mb-5">
       <div
-          className="login-form shadow bg-body rounded"
+          className="register-form shadow bg-body rounded"
           style={{
             width: "450px",
             height: "550px",
@@ -74,7 +74,7 @@ const Register = () => {
               onChange={(e) => setConfirmPassword(e.target.value)}
             />
           </div>
-          <button className="login-button mt-5" onClick={sendRegister}>
+          <button className="login-button mt-3" onClick={sendRegister}>
             Register
           </button>
         </div>
