@@ -16,13 +16,11 @@ const AppState = ({ children }) => {
   const [sneakers, setSneakers] = useState(SneakersData);
 
   const addToCart = (products) => {
-
     // if (cart !=== 0 ) {
       
     // }
     setCart([...cart, products]);
     toast.success('Your item added already');
-
      console.log(cart)
   };
 
