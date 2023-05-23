@@ -151,3 +151,7 @@ img {
   background: white;
   color: black;
 }
+
+.login-text col {
+  margin-left: 1800px;
+}

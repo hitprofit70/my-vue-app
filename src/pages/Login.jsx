@@ -11,7 +11,7 @@ const Login = () => {
   const sendLogin = () => {};
 
   const register = () => {
-    navigator("/login");
+    navigator("/register");
   };
 
   return (
