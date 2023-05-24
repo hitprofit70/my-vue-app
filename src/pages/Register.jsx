@@ -1,7 +1,8 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import TopNav from "../components/TopNav";
 import Floor from "../components/Floor";
 import toast from 'react-hot-toast';
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
   const [firstName, setFirstName] = useState("");
@@ -10,11 +11,44 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const navigator = useNavigate();
+
+
+  const clearInputs = () => {
+    setFirstName("");
+    setLastName("");
+    setContactNo("");
+    setEmail("");
+    setPassword("");
+    setConfirmPassword("");
+  };
 
   const sendRegister = () => {
     if (!firstName || !lastName || !contactNo || !email || !password || !confirmPassword) {
       toast.error("All the input are required.");
+      clearInputs();
       return;
+    }
+
+    if (password !== confirmPassword) {
+      toast.error("Password does not match");
+      return;
+    }
+
+    if (firstName && lastName && contactNo && email && password && confirmPassword) {
+      localStorage.setItem('firstname', firstName);
+      localStorage.setItem('lastname', lastName);
+      localStorage.setItem('contactnumber', contactNo);
+      localStorage.setItem('email', email);
+      localStorage.setItem('password', password);
+      localStorage.setItem('confirmpassword', confirmPassword);
+      toast.success("Your register added successfully");
+      navigator("/login");
+      return;
+    }
+
+    if (email !== emailData ) {
+      toast.error("Already user exists")
     }
   }
 
